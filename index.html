@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Heading-->
+<head>
+    <title>Ephemera Exhibit</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="images/Ephemera (1).PNG" sizes="16x16">
+</head>
+
+
+
+<!--Style-->
+<style>
+
+body {
+		 min-height: calc(100vh - 10px);
+		 overflow-x: hidden;
+		 background-color: whitesmoke;
+	}
+.room {
+		 width: 100%;
+		 height: 300px;
+		 position: relative;
+		 transform: scale(0.70) translateY(-25%);
+	}
+.text {
+		 opacity: 0;
+		 position: absolute;
+		 top: 50%;
+		 left: 50%;
+		 transform: translate(-50%, -50%);
+		 font-size: calc(1em + 1.75vw);
+		 color: #FFF;
+		 filter: drop-shadow(1px 1px 0 black)
+			drop-shadow(-1px 1px 0 black) 
+			drop-shadow(1px -1px 0 black) 
+			drop-shadow(-1px -1px 0 black);
+		 text-transform: uppercase;
+		 z-index: 99;
+	}
+.rotate {
+		 width: fit-content;
+		 height: fit-content;
+		 display: inline-block;
+		 position: absolute;
+	}
+.rotate:hover img, .rotate:focus img {
+		 transform: rotate(350deg);
+	}
+.rotate:hover .text, a:focus .text {
+		 opacity: 1;
+	}
+.appear {
+		 width: fit-content;
+		 height: fit-content;
+		 display: inline-block;
+		 position: absolute;
+	}
+.appear img {
+		 opacity: 0;
+	}
+.appear:hover img, .appear:hover .text, a:focus img {
+		 opacity: 1;
+	}
+header {
+		width: fit-content;
+		padding: 10px;
+		margin: 10px auto 0 auto;
+		text-wrap: balance;
+		position: relative;
+		z-index: 100;
+		font-size: 18px;
+		text-align: right;
+	}
+h1 { font-size: 26px; line-height: 26px; color: #000;
+		 text-shadow: none; margin: 0; text-align:left; }
+	a, a:hover, a:focus { color: transparent; background:transparent; }
+	.link { color: teal; }
+	.link:hover, .link:focus { background-color: teal;	color: white; }
+
+@media screen and (max-device-width : 500px){
+		.room {
+			 transform: scale(0.95);
+		}
+		.text {
+			font-size: calc(0.5em + 1.7vw); }
+		header { margin: 10px auto; }
+	}
+	
+@media (prefers-color-scheme: dark) {
+		body { background: #1d3030 url('images/BG.png'); }
+		header, h1 { color: white; }
+		.link { color: #b2d7c1; }
+		.link:hover, .link:focus { background-color: #b2d7c1; color: darkslategrey; }
+	}
+
+</style>
+
+
+
+<!--Body-->
+<body>
+    <header>
+		<h1 style="text-align: center;"><a href="https://www.facebook.com/guitarist.dungz" class="link">Pinakagwapong lalaki sa buong mundo</a></h1> 
+		<p style="text-align: center;">Pindudin mo <a href="" class="link">bubuka</a></p>
+	</header>
+	
+    <main class="room">
+        <a href="https://www.facebook.com/ephemera.exhibit" class="rotate" style="top: vw; left: vw;">
+            <img src="images/Ephemera (2).PNG" style="width: 60.500vw;" alt="">
+            <span class="text" style="">Ephemera</span>
+        </a>
+        <a href="" class="rotate" style="top: 18vw; left: 40vw;">
+            <img src="images/Team (2).PNG" style="width: 25.5vw;">
+            <span class="text" style="">Team</span>
+        </a>
+        <a href="" class="rotate" style="top: 28vw; left: 12.5vw;">
+            <img src="images/About (2).PNG" style="width: 30.500vw;" alt="">
+            <span class="text" style="">About</span>
+        </a>
+        <a href="" class="rotate" style="top: 38vw; left: 29.5vw;">
+            <img src="images/BTS (2).PNG" style="width: 23.500vw;" alt="">
+            <span class="text" style="">BTS</span>
+		</a>
+        <a href="" class="rotate" style="top: 19.5vw; left: 60vw;">
+            <img src="images/Partners (2).PNG" style="width: 26.500vw;">
+            <span class="text" style="">Partners</span>
+        </a>
+        <a href="" class="rotate" style="top: 38.5vw; left: 48vw;">
+            <img src="images/tix (2).PNG" style="width: 24.500vw;">
+            <span class="text" style="">Tickets</span>
+        </a>
+    </main>
+</body>
+</html>
