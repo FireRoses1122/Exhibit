@@ -1,0 +1,141 @@
+body {
+    min-height: calc(100vh - 10px);
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+.room {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform: scale(0.70) translateY(-25%);
+}
+
+.text {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(1em + 1.75vw);
+    color: #FFF;
+    filter: drop-shadow(1px 1px 0 black)
+       drop-shadow(-1px 1px 0 black) 
+       drop-shadow(1px -1px 0 black) 
+       drop-shadow(-1px -1px 0 black);
+    text-transform: uppercase;
+}
+
+.left-rotate {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    position: absolute;
+    transform: rotate(8deg);
+}
+
+.rotate {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    position: absolute;
+}
+
+.rotate:hover img, .rotate:focus img {
+    transform: rotate(350deg);
+}
+
+.rotate:hover .text, a:focus .text {
+    opacity: 1;
+}
+
+.appear {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+    position: absolute;
+}
+
+.appear img {
+    opacity: 0;
+}
+
+.appear:hover img, .appear:hover .text, a:focus img {
+    opacity: 1;
+}
+
+header {
+   width: fit-content;
+   padding: 10px;
+   margin: 10px auto 0 auto;
+   text-wrap: balance;
+   position: relative;
+   z-index: 100;
+   font-size: 18px;
+   text-align: right;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 26px;
+    color: #000;
+    text-shadow: none;
+    margin: 0;
+    text-align:left; 
+}
+
+a, a:hover, a:focus {
+    color: transparent;
+    background:transparent;
+}
+
+.link {
+     color: teal; 
+}
+
+.link:hover, .link:focus {
+     background-color: teal;
+     color: white; 
+}
+
+.modal{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-visible{
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item:nth-child(1),
+  .item:nth-child(2),
+  .item:nth-child(3),
+  .item:nth-child(4),
+  .item:nth-child(5),
+  .item:nth-child(6),
+  .item:nth-child(7),
+  .item:nth-child(8),
+  .item:nth-child(9) {
+    width: 29%;
+    height: 32%;
+  }
