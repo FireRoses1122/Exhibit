@@ -186,3 +186,9 @@ a, a:hover, a:focus {
     width: 80%;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
