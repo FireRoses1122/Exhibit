@@ -164,7 +164,7 @@ a, a:hover, a:focus {
     border: none;
 }
 
-.team-modal {
+.teadal {
     display: none; 
     position: fixed;
     z-index: 1;
