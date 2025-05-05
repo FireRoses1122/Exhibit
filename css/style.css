@@ -54,7 +54,7 @@ body {
     height: fit-content;
     display: inline-block;
     position: flex;
-    transform: rotate(5.2deg);
+    transform: rotate(0deg);
 }
 
 .rotit:hover img, .rotit:focus img {
@@ -165,7 +165,6 @@ a, a:hover, a:focus {
 }
 
 .teadal {
-    display: ; 
     position: fixed;
     z-index: 1;
     padding-top: 100px; 
@@ -175,15 +174,36 @@ a, a:hover, a:focus {
     height: 100%; 
     overflow: auto; 
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
 }
 
 .modal-content {
-    background-color: rgb(63, 63, 63);
+    background-color: transparent;
     border: none;
     margin: auto;
     padding: 20px;
-    width: 80%;
+    width: 50%;
+}
+
+.modality {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content-description{
+    background-color: green;
+    border: none;
+    margin: auto;
+    padding: 20px;
+    width: 30%;
 }
 
 .center {
@@ -192,3 +212,21 @@ a, a:hover, a:focus {
     margin-right: auto;
     width: 75%;
 }
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
