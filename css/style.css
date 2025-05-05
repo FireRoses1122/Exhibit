@@ -54,7 +54,7 @@ body {
     height: fit-content;
     display: inline-block;
     position: flex;
-    transform: rotate(4deg);
+    transform: rotate(5.2deg);
 }
 
 .rotit:hover img, .rotit:focus img {
@@ -165,7 +165,7 @@ a, a:hover, a:focus {
 }
 
 .teadal {
-    display: none; 
+    display: ; 
     position: fixed;
     z-index: 1;
     padding-top: 100px; 
